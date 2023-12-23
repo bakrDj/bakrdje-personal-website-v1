@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -11,7 +12,6 @@ function Me({}: Props) {
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       const posX = event.clientX - window.innerWidth / 2;
-      console.log("🚀 ~ file: page.tsx:13 ~ handleMouseMove ~ event.clientX:", innerCircleRef);
       const posY = event.clientY - window.innerHeight / 2;
 
       if (outerCircleRef.current && innerCircleRef.current && innerBorderCircleRef.current) {
@@ -36,7 +36,11 @@ function Me({}: Props) {
 
   return (
     <>
-      <div className="flex flex-col justify-center flex-1 w-[1200px] mx-auto ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { delay: 0.5 } }}
+        className="flex flex-col justify-center flex-1 w-[1200px] mx-auto "
+      >
         {/* content wrapper */}
         <div className="px-10 flex justify-between items-center gap-6 w-full h-[560px] border-4 border-transparent rounded-xl ">
           <div className="flex flex-col gap-3 flex-1 flex-shrink-0  text-[#113946] ">
@@ -76,14 +80,15 @@ function Me({}: Props) {
                 {/* image */}
                 <img
                   className="w-full h-full object-cover"
-                  src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/images/Untitled Project (1).jpg"
+                  // src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
             </div>
           </div>
         </div>
         {/* <div className="w-full h-[560px] border-4 border-[#113946] bg-[#fff2d8] rounded-xl ">content</div> */}
-      </div>
+      </motion.div>
     </>
   );
 }
