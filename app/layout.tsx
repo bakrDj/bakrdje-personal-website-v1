@@ -4,6 +4,8 @@ import "./globals.css";
 import Menu from "./components/Menu";
 import TwoLinesCanvas from "./components/TwoLines";
 import SlideEraser from "./components/SlideEraser";
+import { AnimatePresence, motion } from "framer-motion";
+import RouteAnimation from "./components/RouteAnimation";
 
 const comfortaa = Comfortaa({ subsets: ["latin"] });
 
@@ -32,7 +34,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Menu></Menu>
           </section>
           {/* content */}
-          <section className="flex flex-col flex-1">{children}</section>
+          <RouteAnimation>
+            <section className="flex flex-col flex-1">{children}</section>
+          </RouteAnimation>
         </main>
       </body>
     </html>

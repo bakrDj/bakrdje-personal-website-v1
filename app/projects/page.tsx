@@ -4,7 +4,7 @@ import { delay, motion } from "framer-motion";
 import { useBearStore } from "../components/SlideEraser";
 type Props = {};
 
-function Experience({}: Props) {
+function Projects({}: Props) {
   const outerCircleRef = useRef<HTMLDivElement>(null);
   const innerBorderCircleRef = useRef<HTMLDivElement>(null);
   const innerCircleRef = useRef<HTMLDivElement>(null);
@@ -46,7 +46,7 @@ function Experience({}: Props) {
         {/* content wrapper */}
         <div className="relative z-38 w-full h-[560px]">
           <div className={`absolute z-40 inset-[-4px]  bg-[#113946] rounded-xl ${!sliderAnimationStart && "invert mix-blend-difference"}`}></div>
-          <div className="w-full h-[560px]  relative z-40 bg-[#fff2df] rounded-lg">content fdg sdf</div>
+          <div className="w-full h-[560px]  relative z-40 bg-[#fff2df] rounded-lg">content</div>
         </div>
       </div>
       {/* </motion.div> */}
@@ -54,4 +54,4 @@ function Experience({}: Props) {
   );
 }
 
-export default Experience;
+export default Projects;

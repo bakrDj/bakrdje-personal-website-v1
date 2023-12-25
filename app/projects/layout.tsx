@@ -5,8 +5,8 @@ type Props = {} & PropsWithChildren;
 
 import React from "react";
 
-const ExperienceLayout = (props: Props) => {
+const ProjectsLayout = (props: Props) => {
   return <>{props.children}</>;
 };
 
-export default ExperienceLayout;
+export default ProjectsLayout;

@@ -29,3 +29,16 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+.trail {
+  position: absolute;
+  border-radius: 50%;
+  width: 1000px;
+  height: 4px;
+  background-color: #113946;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+}
