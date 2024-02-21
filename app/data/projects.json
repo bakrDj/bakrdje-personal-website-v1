@@ -1,0 +1,41 @@
+[
+  {
+    "tags": ["FIGMA", "ASTRO", "MOTION ONE", "TAILWIND"],
+    "title": "HRM website",
+    "description": "A landing page for a Human Resources Management platform, built using Astro, Tailwind, and Motion One to showcase its features and benefits.",
+    "link": "https://attendance-ms-landingpage.vercel.app/",
+    "project_imgs_number": 1,
+    "links": {
+      "website": "http://google.com",
+      "github": "http://google.com"
+    }
+  },
+  {
+    "tags": ["Next.js", "figma", "graphql", "prisma", "postgresql"],
+    "title": "Clinic management System",
+    "description": "Nabd — a sleek clinic management web app powered by Next.js and GraphQL. Designed with Figma, it offers multi-language support.",
+    "link": "https://attendance-ms-landingpage.vercel.app/",
+    "project_imgs_number": 5
+  },
+  {
+    "tags": ["Next.js", "figma", "graphql"],
+    "title": "Attendance MS for Employees",
+    "description": "Iltizame — is a comprehensive AMS platform, leveraging Next.js, Zustand, and GraphQL for seamless functionality. Designed with Figma.",
+    "link": "https://attendance-ms-landingpage.vercel.app/",
+    "project_imgs_number": 5
+  },
+  {
+    "tags": ["Next.js", "figma", "graphql"],
+    "title": "Medical Centers Management System",
+    "description": "PulseCraft — is a versatile Clinic and Medical Centers Management System suitable for facilities of all sizes, designed with Figma and built with Next.js and GraphQL.",
+    "link": "https://attendance-ms-landingpage.vercel.app/",
+    "project_imgs_number": 4
+  },
+  {
+    "tags": ["FIGMA", "TAILWIND"],
+    "title": "HRM website",
+    "description": "A landing page for an international delivery company, created with Figma and tailored with Tailwind CSS",
+    "link": "https://attendance-ms-landingpage.vercel.app/",
+    "project_imgs_number": 1
+  }
+]

@@ -1,0 +1,65 @@
+//
+
+.skill_content {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease;
+  left: 8px;
+}
+
+.skill_active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+}
+
+// #skill_menu {
+//   li {
+//     cursor: pointer;
+//   }
+//   & svg {
+//     scale: 0.2;
+//     animation: spin 4s linear infinite;
+//     opacity: 0.8;
+//     fill: #113946;
+//     @apply transition-all origin-center duration-300;
+
+//     & path {
+//       @apply transition-all duration-300;
+//     }
+//   }
+//   & li:hover,
+//   & li.active {
+//     @apply transition-all duration-300;
+
+//     & svg {
+//       scale: 0.6;
+//       fill: transparent;
+//       @apply transition-[scale] origin-center duration-500;
+//       & path:last-of-type {
+//         @apply transition-all duration-500 delay-200  origin-center;
+//         @apply scale-100;
+//       }
+//     }
+//   }
+//   & li.active {
+//     color: #b59c78;
+//     & svg {
+//       opacity: 1;
+//       & path:first-of-type {
+//         stroke: #b59c78;
+//         // stroke: #b59c78;
+//       }
+//       & path:last-of-type {
+//         fill: #b59c78;
+//         // stroke: #b59c78;
+//       }
+//     }
+//   }
+// }
+
+// @keyframes spin {
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }

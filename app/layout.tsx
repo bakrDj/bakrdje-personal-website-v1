@@ -7,7 +7,8 @@ import SlideEraser from "./components/SlideEraser";
 import { AnimatePresence, motion } from "framer-motion";
 import RouteAnimation from "./components/RouteAnimation";
 
-const comfortaa = Comfortaa({ subsets: ["latin"] });
+const comfortaa = Comfortaa({ subsets: ["latin"], display: "swap", adjustFontFallback: false /* , variable: "--font-comfortaa" */ });
+// const lato = Spectral({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "bakrDje",
@@ -19,24 +20,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body
         className={comfortaa.className}
-        style={{ overflow: "hidden" }}
+        // style={{ overflow: "hidden" }}
       >
         {/* canvas */}
-        <div className="fixed top-0 left-0 w-full h-full -z-10">
-          <TwoLinesCanvas />
-        </div>
+        <div className="fixed top-0 left-0 w-full h-full -z-10">{/* <TwoLinesCanvas /> */}</div>
         {/* slide earaser */}
-        <SlideEraser />
+        {/* <SlideEraser /> */}
 
-        <main className="flex flex-col h-screen  ">
-          {/* menu */}
-          <section>
+        <main className="flex flex-col gap-2 [height:100dvh] md:h-screen w-auto ">
+          {/* Header */}
+          <header>
             <Menu></Menu>
-          </section>
+          </header>
           {/* content */}
-          <RouteAnimation>
-            <section className="flex flex-col flex-1">{children}</section>
-          </RouteAnimation>
+          {/* <RouteAnimation> */}
+          <section className="flex flex-col flex-1">{children}</section>
+          {/* </RouteAnimation> */}
         </main>
       </body>
     </html>

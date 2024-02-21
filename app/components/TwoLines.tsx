@@ -37,11 +37,13 @@ const sketch: Sketch = (p5: P5CanvasInstance<SketchProps>) => {
     // line(endX, endY, controlX2, controlY2)
 
     // Draw the bezier curve
-    p5.stroke(17, 57, 70);
+    // p5.stroke(17, 57, 70);
+    p5.stroke(17, 57, 70, 180);
+    // p5.stroke("#b59c78");
     p5.strokeWeight(4);
     p5.noFill();
-    p5.bezier(startX, startY + p5.mouseY * 0.3, controlX1, controlY1, controlX2, controlY2, endX, endY - p5.mouseY * 0.0);
-    p5.bezier(startX, startY / 1.3 + p5.mouseY * 0.4, controlX1, controlY1 + speedX, controlX2 + speedX, controlY2 + speedX, endX, endY / 1.3 - p5.mouseY * 0.0);
+    p5.bezier(startX, startY + p5.mouseY * 0.03, controlX1, controlY1, controlX2, controlY2, endX, endY - p5.mouseY * 0.0);
+    p5.bezier(startX, startY / 1.3 + p5.mouseY * 0.04, controlX1, controlY1 + speedX, controlX2 + speedX, controlY2 + speedX, endX, endY / 1.3 - p5.mouseY * 0.0);
     // bezier(startX, startY/1.6 + (mouseY*0.5), controlX1, controlY1 + speedX*2, controlX2 + speedX*2, controlY2+speedX*2, endX, endY/1.6 - (mouseY*0.0));
     // Update angle for the waving effect
     angle += 0.005;

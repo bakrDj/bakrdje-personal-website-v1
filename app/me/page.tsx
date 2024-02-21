@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useBearStore } from "../components/SlideEraser";
 import { randomInt } from "crypto";
-
+import "./me.scss";
 type Props = {};
 
 function Me({}: Props) {
@@ -73,26 +73,34 @@ function Me({}: Props) {
         className="flex flex-col justify-center flex-1 w-[1200px] mx-auto "
         > */}
       {/* content wrapper */}
-      <div className="flex flex-col justify-center flex-1 w-[1200px] mx-auto ">
-        <div className="px-10 flex justify-between items-center gap-6 w-full h-[560px] border-4 border-transparent rounded-xl ">
-          <div className="flex flex-col gap-3 flex-1 flex-shrink-0  text-[#113946] ">
+      {/* <div className="flex flex-col justify-center flex-1 mx-auto "> */}
+      <div className="flex-1 mx-auto ">
+        <div className="pt-6 px-4 md:px-8 md:max-w-full xl:px-0 xl:w-[1200px] mx-auto w-screen flex flex-col lg:flex-row justify-between items-center gap-2 md:gap-6 h-[560px] border-4 border-transparent rounded-xl ">
+          <div className="flex flex-col items-center lg:items-start gap-3 lg:gap-2 flex-1 flex-shrink-0  text-[#113946] ">
+            <div className={`text-xl font-mono`}>
+              Hi<span className="wave text-sm md:text-base align-text-top">👋</span>, my name is{" "}
+            </div>
             <div
-              className={`text-7xl font-semibold whitespace-nowrap ${!sliderAnimationStart && "invert mix-blend-difference"}`}
+              className={`-ml-[6px] text-5xl md:text-6xl lg:text-7xl font-semibold whitespace-nowrap `}
               style={{ letterSpacing: "-4.5px" }}
             >
               boubaker djedidi
             </div>
-            <div className={`text-2xl ${!sliderAnimationStart && "invert mix-blend-difference"}`}>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et dolorum ipsum itaque ad reiciendis quasi earum aut alias odio quam.
+            <div className={`text-xl text-center lg:text-start`}>
+              <span className="whitespace-normal md:whitespace-nowrap">
+                I'm a <b>full-stack developer</b>, but occationally a <b>web designer</b>
+              </span>{" "}
+              focused on building exceptional digital interfaces. Currently, working as a <b>freelancer</b>.
             </div>
           </div>
           {/* right side */}
           <div className="flex-1 flex justify-end">
             {/* outer circle */}
-            <div className="relative flex justify-center items-center rounded-full border-4 border-transparent w-[364px] h-[364px]">
+            <div className="scale-[0.85] md:scale-100 relative flex justify-center items-center rounded-full border-4 border-transparent w-[364px] h-[364px]">
               <div
                 ref={outerCircleRef}
-                className={` relative flex justify-center items-center rounded-full border-4 border-[#113946] w-[364px] h-[364px] ${!sliderAnimationStart && "invert mix-blend-difference"}`}
+                // className={` relative flex justify-center items-center rounded-full border-4 border-[#113946] w-[364px] h-[364px] ${!sliderAnimationStart && "invert mix-blend-difference"}`}
+                className={` relative flex justify-center items-center rounded-full border-4 border-[#113946] w-[364px] h-[364px] `}
                 style={
                   {
                     // background: "rgb(17,57,70)",
@@ -114,7 +122,8 @@ function Me({}: Props) {
               <div
                 ref={innerBorderCircleRef}
                 // className="invert mix-blend-difference absolute rounded-full border-4 border-[#113946] w-[280px] h-[280px] bg-cover bg-center bg-[url('https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
-                className={`overflow-hidden absolute rounded-full border-4 border-[#113946] w-[280px] h-[280px] bg-cover bg-center ${!sliderAnimationStart && "invert mix-blend-difference"}`}
+                // className={`overflow-hidden absolute rounded-full border-4 border-[#113946] w-[280px] h-[280px] bg-cover bg-center ${!sliderAnimationStart && "invert mix-blend-difference"}`}
+                className={`overflow-hidden absolute rounded-full border-4 border-[#113946] w-[280px] h-[280px] bg-cover bg-center `}
               ></div>
               <div
                 ref={innerCircleRef}
@@ -124,8 +133,9 @@ function Me({}: Props) {
                 {/* image */}
 
                 <img
-                  className="absolute w-full h-full object-cover"
-                  src="/images/grayed.jpg"
+                  className="rotate-[6deg] absolute w-full h-full object-cover"
+                  src="/images/Capturerere.png"
+
                   // src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </div>
