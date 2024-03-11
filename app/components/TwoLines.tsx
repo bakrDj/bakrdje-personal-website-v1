@@ -37,8 +37,8 @@ const sketch: Sketch = (p5: P5CanvasInstance<SketchProps>) => {
     // line(endX, endY, controlX2, controlY2)
 
     // Draw the bezier curve
-    // p5.stroke(17, 57, 70);
-    p5.stroke(17, 57, 70, 180);
+    p5.stroke(17, 57, 70);
+    // p5.stroke(17, 57, 70, 180);
     // p5.stroke("#b59c78");
     p5.strokeWeight(4);
     p5.noFill();

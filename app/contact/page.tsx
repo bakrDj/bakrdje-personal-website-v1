@@ -1,7 +1,7 @@
 "use client";
 import React, { Suspense, useEffect, useRef } from "react";
 import { delay, motion } from "framer-motion";
-import { useBearStore } from "../components/SlideEraser";
+import { useBearStore } from "@/zustand/store";
 import { Button } from "@/components/ui/button";
 type Props = {};
 import "./contact.scss";

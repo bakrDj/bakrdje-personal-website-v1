@@ -2,17 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { motion as Motion, useAnimationControls, useMotionValue, useMotionValueEvent } from "framer-motion";
 import { create } from "zustand";
+import { useBearStore } from "@/zustand/store";
 
 type Props = {};
-
-export const useBearStore = create((set) => ({
-  menuId: null,
-  sliderAnimationStart: false,
-  sliderAnimationEnd: false,
-  sliderHide: false,
-  // increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
-  // removeAllBears: () => set({ bears: 0 }),
-}));
 
 const SlideEraser = (props: Props) => {
   const contorls = useAnimationControls();

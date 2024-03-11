@@ -144,12 +144,13 @@ function ProjectID({ params: { project_id } }: Props) {
                   <div className="mt-4 md:mt-0">
                     <div className=" font-mono flex flex-wrap gap-2 text-sm">
                       {projectsData?.[project_id - 1]?.tags &&
-                        projectsData[project_id - 1].tags.map((i) => (
+                        projectsData[project_id - 1].tags.map((tag, i) => (
                           <Badge
+                            key={i}
                             variant={"outline"}
                             className={"lowercase rounded-sm border-slate-500  text-zinc-700 px-[6px]"}
                           >
-                            {i}
+                            {tag}
                           </Badge>
                         ))}
                     </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { Suspense, useEffect, useRef } from "react";
 import { delay, motion } from "framer-motion";
-import { useBearStore } from "../components/SlideEraser";
+import { useBearStore } from "@/zustand/store";
 import OrbitingSkills from "./components/OrbitingSkills";
 type Props = {};
 import "./skills.scss";

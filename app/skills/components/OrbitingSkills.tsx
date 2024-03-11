@@ -181,4 +181,5 @@ const OrbitingSkills = forwardRef((props: Props, ref: any) => {
   );
 });
 
+OrbitingSkills.displayName = "OrbitingSkills";
 export default OrbitingSkills;

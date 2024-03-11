@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { LayoutRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { usePathname } from "next/navigation";
 import React, { PropsWithChildren, useContext, useRef } from "react";
-import { useBearStore } from "./SlideEraser";
+import { useBearStore } from "@/zustand/store";
 
 type Props = {} & React.PropsWithChildren;
 
