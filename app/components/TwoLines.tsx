@@ -15,11 +15,12 @@ const sketch: Sketch = (p5: P5CanvasInstance<SketchProps>) => {
   let reverse = 1;
 
   p5.setup = () => {
-    p5.createCanvas(p5.windowWidth, p5.windowHeight);
+    p5.createCanvas(p5.windowWidth > 640 ? p5.windowWidth : 640, p5.windowHeight);
     startX = -50;
     startY = p5.height / 2;
     endX = p5.width + 50;
     endY = p5.height / 2;
+    console.log("🚀 ~ p5.windowWidth > 640 ? p5.windowWidth : 640:", p5.windowWidth > 640 ? p5.windowWidth : 640);
   };
   p5.draw = () => {
     p5.background(255, 242, 216);

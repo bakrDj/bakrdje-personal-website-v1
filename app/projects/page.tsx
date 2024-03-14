@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import projectsData from "@/app/data/projects.json";
+import { ArrowUpRightFromSquare } from "lucide-react";
 function Projects({}: Props) {
   const outerCircleRef = useRef<HTMLDivElement>(null);
   const innerBorderCircleRef = useRef<HTMLDivElement>(null);
@@ -159,6 +160,7 @@ function Projects({}: Props) {
                                 </div>
                                 <div className="text-sm sm:text-base font-bold group-hover:text-[#977e5b] transition-all duration-300">{projectsData?.[i] && projectsData?.[i].title}</div>
                                 <div className="max-h-sm overflow-hidden text-xs sm:text-sm">{projectsData?.[i] && projectsData?.[i].description}</div>
+                                {projectsData?.[i] && projectsData?.[i].links && <ArrowUpRightFromSquare className="w-5 h-5 text-[#113946] group-hover:text-[#977e5b]" />}
                               </div>
                             </div>
                           </Link>

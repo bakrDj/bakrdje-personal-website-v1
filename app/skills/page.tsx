@@ -84,9 +84,9 @@ function Skills({}: Props) {
           > */}
       <div className="flex flex-col justify-center flex-1 px-4 lg:px-8 md:min-w-full xl:px-0 xl:min-w-0 xl:w-[1200px] mx-auto ">
         {/* content wrapper */}
-        <div className="relative z-38 w-full h-[592px]">
+        <div className="relative z-38 w-full h-[568px]">
           <div className={`absolute z-40 inset-[-4px]  bg-[#113946] rounded-xl ${!sliderAnimationStart && "invert mix-blend-difference"}`}></div>
-          <div className="flex w-full h-[592px]  relative z-40 bg-[#FFF2D8] rounded-lg">
+          <div className="flex w-full h-[568px]  relative z-40 bg-[#FFF2D8] rounded-lg">
             <div className="flex-1 p-4 flex flex-col gap-4 items-center h-auto rounded-lg">
               <div className="flex flex-col">
                 <h1 className="text-lg font-bold text-[#113946]">Skills</h1>

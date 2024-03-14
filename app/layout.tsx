@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         style={{ overflow: "hidden" }}
       >
         {/* canvas */}
-        <div className="fixed top-0 left-0 w-full h-full -z-10">
+        <div className="flex justify-center fixed top-0 left-0 w-full h-full -z-10">
           <TwoLinesCanvas />
         </div>
         {/* slide earaser */}

@@ -5,6 +5,7 @@ import { useBearStore } from "@/zustand/store";
 import { Button } from "@/components/ui/button";
 type Props = {};
 import "./contact.scss";
+import { Phone } from "lucide-react";
 
 function Contact({}: Props) {
   const outerCircleRef = useRef<HTMLDivElement>(null);
@@ -63,7 +64,7 @@ function Contact({}: Props) {
                   or through contact links below.{" "}
                 </p>
               </div>
-              <div className="py-11 flex flex-col w-full px-10 gap-8 justify-start items-center flex-1">
+              <div className="py-11 flex flex-col w-full px-6 gap-8 justify-start items-center flex-1">
                 <div className="flex flex-col gap-2 items-center ">
                   <a
                     className=""
@@ -78,6 +79,19 @@ function Contact({}: Props) {
                     </Button>
                   </a>
                 </div>
+                <a
+                  href="tel:+213674525142"
+                  className="hover:underline text-[#113946] text-xl flex gap-2 items-center"
+                >
+                  {/* <div className=" bg-[#113946] p-[8px] rounded-full">
+                    <Phone
+                      strokeWidth="1.8"
+                      size={18}
+                      color="#FFF2D8"
+                    />
+                  </div> */}
+                  <div>+213 674 52 51 42</div>
+                </a>
                 <div className="h-[2px] w-[200px] bg-[#113946bb] rounded"></div>
                 <div className="sm_icons flex gap-8 justify-center items-center">
                   <svg

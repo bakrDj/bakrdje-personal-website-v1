@@ -221,7 +221,8 @@ const Menu = (props: Props) => {
           <Navbar></Navbar>
           <div className="basis-4/5 sm:basis-4/5 md:basis-1/5  flex gap-4 justify-end items-center">
             <Link
-              href="/projects"
+              href="/CV_boubaker_djedidi.pdf"
+              target="_blank"
               className=""
             >
               <Button className="h-9 flex items-center gap-2 text-[#113946] bg-transparent border-[2px] border-[#113946BB] hover:bg-[#11394611] rounded-sm px-2">

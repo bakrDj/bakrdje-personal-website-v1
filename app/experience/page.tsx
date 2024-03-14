@@ -47,9 +47,9 @@ function Experience({}: Props) {
           > */}
       <div className="flex flex-col justify-center flex-1 px-4 lg:px-8 md:min-w-full xl:px-0 xl:min-w-0 xl:w-[1200px] mx-auto  ">
         {/* content wrapper */}
-        <div className="relative z-38 w-full h-[592px] ">
+        <div className="relative z-38 w-full h-[560px] ">
           <div className={`absolute z-40 inset-[-4px]  bg-[#113946] rounded-xl ${!sliderAnimationStart && "invert mix-blend-difference"}`}></div>
-          <div className="flex w-full h-[592px]  relative z-40 bg-[#FFF2D8] rounded-lg">
+          <div className="flex w-full h-[560px]  relative z-40 bg-[#FFF2D8] rounded-lg">
             <div className="flex-1 px-2 py-4 md:p-4 flex flex-col gap-4 items-center h-auto rounded-lg overflow-hidden ">
               <div className="flex flex-col">
                 <h1 className="text-lg font-bold text-[#113946]">Experience</h1>
@@ -110,7 +110,7 @@ function Experience({}: Props) {
                       </div>
                       <div className="basis-3/4">
                         <div className="text-base font-medium pt-[1px]">Full-stack developer</div>
-                        <div className="text-sm font-mono font-semibold opacity-70">Jan 2023 - present</div>
+                        <div className="text-sm font-mono font-semibold opacity-70">Sep 2023 - Present</div>
                         <p className="text-sm font-medium pt-[4px]">
                           I undertake projects as an occasional freelancer, effectively coding websites and web applications to expand my skills and portfolio while meeting client needs.{" "}
                           {/* <div className="flex flex-col gap-1 ml-2 mt-1">
@@ -163,25 +163,24 @@ function Experience({}: Props) {
                       </div>
                       <div className="basis-3/4">
                         <div className="text-base font-medium pt-[0px]">Technical Co-founder</div>
-                        <div className="text-sm font-mono font-semibold opacity-70">Sep 2020 - Jan 2023</div>
+                        <div className="text-sm font-mono font-semibold opacity-70">Nov 2021 - Sep 2023</div>
                         <p className="text-sm font-medium pt-[4px]">
-                          Qafilaty is An integrated system solution for managing fast delivery companies, I've coded & designed the interface for the interconnected platforms. some tasks and
-                          technologies implemented are:
+                          Qafilaty is An integrated system solution for managing fast delivery companies.
                           <div className="flex flex-col gap-1 mt-2">
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
                               <span>Designed the UI interfaces for interconnected platforms.</span>
                             </div>
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
                               <span>Developed and styled interactive web applications for each platform.</span>
                             </div>
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
                               <span>Built and delivered technical solutions according to stakeholder business requirements.</span>
                             </div>
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
                               <span>Collaborated with product managers and other developers to ensure seamless integration of features and optimal user experience.</span>
                             </div>
                           </div>
@@ -227,21 +226,20 @@ function Experience({}: Props) {
                       </div>
                       <div className="basis-3/4">
                         <div className="text-base font-medium pt-[0px]">Front-end developer / Web designer</div>
-                        <div className="text-sm font-mono font-semibold opacity-70">Jul 2020 - Dec 2022</div>
+                        <div className="text-sm font-mono font-semibold opacity-70">Jul 2021 - Jan 2023</div>
                         <p className="text-sm font-medium pt-[4px]">
-                          It-hash was a software development agency, a small collection of delvepers, designers and digital marketers, I worked as a front-end/designer for various projects with
-                          differenct technologies, inculding:{" "}
+                          It-hash was a software development agency, a small collection of delvepers, designers and digital marketers.
                           <div className="flex flex-col gap-1 mt-2">
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
                               <span>Developed, styled and maintained code for client websites.</span>
                             </div>
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
                               <span>Designed UI interfaces and constructed a reusable component system.</span>
                             </div>
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span>{" "}
                               <span>Developed projects utilizing a variety of technologies, with a primary focus on Next.js, Astro, Tailwind CSS, and Apollo GraphQL.</span>
                             </div>
                           </div>
@@ -300,15 +298,15 @@ function Experience({}: Props) {
                       </div>
                       <div className="basis-3/4">
                         <div className="text-base font-medium pt-[0px]">BSc Computer Science</div>
-                        <div className="text-sm font-mono font-semibold opacity-70">Jul 2020 - Dec 2022</div>
+                        <div className="text-sm font-mono font-semibold opacity-70">Sep 2017 - Jun 2021</div>
                         <p className="text-sm font-medium pt-[4px]">
                           Successfully completed my undergraduate studies. gained skills in coding, problem-solving, and software development through coursework and projects, establishing a robust
                           foundation for a career in technology. {/* <div className="flex flex-col gap-1 ml-2 mt-1"> */}
                           {/* <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span> <span>responsible for coding websites and web applications</span>
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span> <span>responsible for coding websites and web applications</span>
                             </div>
                             <div className="flex gap-1">
-                              <span className="flex-shrink-0 w-[6px] h-[6px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span> <span>responsible for coding websites and web applications</span>
+                              <span className="flex-shrink-0 w-[5px] h-[5px] rounded bg-slate-500 inline-block mt-[7px] mr-1"></span> <span>responsible for coding websites and web applications</span>
                             </div> */}
                           {/* </div> */}
                         </p>

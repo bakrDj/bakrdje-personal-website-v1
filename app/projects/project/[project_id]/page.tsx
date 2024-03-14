@@ -162,12 +162,18 @@ function ProjectID({ params: { project_id } }: Props) {
                     {(projectsData?.[project_id - 1]?.links && (
                       <>
                         {projectsData?.[project_id - 1]?.links?.website && (
-                          <Link href={""}>
+                          <Link
+                            target="_blank"
+                            href={projectsData?.[project_id - 1]?.links?.website as any}
+                          >
                             <ArrowUpRightFromSquare className="w-6 h-6 text-[#113946] hover:text-[#b59c78]" />
                           </Link>
                         )}
                         {projectsData?.[project_id - 1]?.links?.github && (
-                          <Link href={""}>
+                          <Link
+                            target="_blank"
+                            href={projectsData?.[project_id - 1]?.links?.github as any}
+                          >
                             <Github className="w-6 h-6 [stroke-width:2px] text-[#113946] hover:text-[#b59c78]" />
                           </Link>
                         )}
