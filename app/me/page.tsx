@@ -133,8 +133,8 @@ function Me({}: Props) {
                 {/* image */}
 
                 <img
-                  className=" absolute w-full h-full object-cover"
-                  src="images/picture2.jpg"
+                  className=" absolute w-full h-full scale-150 -translate-x-[68px] -translate-y-12"
+                  src="images/picturee.jpg"
                 />
               </div>
             </div>
