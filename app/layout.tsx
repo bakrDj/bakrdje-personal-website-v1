@@ -9,13 +9,14 @@ import RouteAnimation from "./components/RouteAnimation";
 import { Button } from "@/components/ui/button";
 import Drawer from "./components/Drawer";
 import { create } from "zustand";
+import NextTopLoader from "nextjs-toploader";
 
 const comfortaa = Comfortaa({ subsets: ["latin"], display: "swap", adjustFontFallback: false /* , variable: "--font-comfortaa" */ });
 // const lato = Spectral({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "bakrDje",
-  description: "backrDje portfolio website",
+  title: "BakrDje | Web Developer & Designer",
+  description: "backrDje web Developer & designer portfolio website",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -25,6 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={comfortaa.className}
         style={{ overflow: "hidden" }}
       >
+        <NextTopLoader
+          color="#113946"
+          shadow={false}
+          height={4}
+        />
         {/* canvas */}
         <div className="flex justify-center fixed top-0 left-0 w-full h-full -z-10">
           <TwoLinesCanvas />

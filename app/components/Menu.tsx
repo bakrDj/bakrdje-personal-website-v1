@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useBearStore } from "@/zustand/store";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -8,6 +8,7 @@ type Props = {};
 import "./Menu.scss";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, AudioLines, File, FileHeart, Files, List, MenuIcon, Play } from "lucide-react";
+import YouTube, { YouTubePlayer } from "react-youtube";
 
 const Navbar = ({ is_vertical = false }: { is_vertical?: boolean }) => {
   const pathname = usePathname();
@@ -205,6 +206,28 @@ const Navbar = ({ is_vertical = false }: { is_vertical?: boolean }) => {
 
 const Menu = (props: Props) => {
   const pathname = usePathname();
+
+  const playerRef = useRef<YouTubePlayer | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const videoId = "4yqnvFTwBHU"; 
+
+  const onPlayerReady = (event: { target: YouTubePlayer }) => {
+    playerRef.current = event.target;
+  };
+
+  const togglePlay = () => {
+    if (!playerRef.current) return;
+
+    if (isPlaying) {
+      playerRef.current.pauseVideo();
+      setIsPlaying(false);
+    } else {
+      playerRef.current.playVideo();
+      setIsPlaying(true);
+    }
+  };
+
   return (
     <>
       <div className="px-4 lg:px-8 md:max-w-full xl:px-0 xl:w-[1200px] mx-auto">
@@ -215,7 +238,20 @@ const Menu = (props: Props) => {
               className="md:hidden hover:text-[#b59c78]"
               size={32}
             />
-            <AudioLines size={32} />
+            <button
+              onClick={togglePlay}
+              className="px-0 py-0 bg-transparent hover:bg-transparent hover:scale-110 transition-all duration-200"
+            >
+              {isPlaying ? (
+                <AudioLines
+                  size={32}
+                  color="#b59c78"
+                />
+              ) : (
+                <AudioLines size={32} />
+              )}
+            </button>
+            {/* <AudioLines size={32} /> */}
             {/* <Play size={32} /> */}
           </div>
           <Navbar></Navbar>
@@ -240,6 +276,22 @@ const Menu = (props: Props) => {
           </div>
         </div>
       </div>
+      <YouTube
+        videoId={videoId}
+        opts={{
+          height: "0",
+          width: "0",
+          playerVars: {
+            autoplay: 0,
+            controls: 0,
+            loop: 1,
+            modestbranding: 1,
+            rel: 0,
+            playlist: videoId, 
+          },
+        }}
+        onReady={onPlayerReady}
+      />
     </>
   );
 };
